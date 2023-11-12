@@ -21,7 +21,7 @@
   - Duomenų įvedimo metodas
   - Duomenų išvedimo metodas
   - Galutinio pažymio skaičiavimo metodas
-  - Baigus duomenų įvedimą, suskaičiuoja galutį balą ir juos pateikia į ekraną tokiu ar panašiu pavidalu (kur galutinis apskaičiuotas balas pateikiamas dviejų skaičių po kablelio tikslumu):
+  - Galutinis apskaičiuotas balas pateikiamas dviejų skaičių po kablelio tikslumu:
 
   ```
   Pavardė     Vardas       Galutinis (Vid.)
