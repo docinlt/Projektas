@@ -39,14 +39,14 @@ studentas::~studentas()
 }
 
 void studentas::printas() {
-	printf("|%-10s|%-20s|", vard.c_str(), pav.c_str());
-	for (auto& a : paz) printf("%3d|", a);
-	printf("%10d|\n", egz);
+	printf("%-10s%-18s", vard.c_str(), pav.c_str());
+	for (auto& a : paz) printf("%4d", a);
+	printf("%8d\n", egz);
 }
 
 void studentas::printasRez() { 
-	printf("|%-10s|%-20s|", vard.c_str(), pav.c_str());
-	printf("%10.2f|\n", rez); 
+	printf("%-10s%-20s", vard.c_str(), pav.c_str());
+	printf("%10.2f\n", rez); 
 }
 
 void studentas::rezVid() {
