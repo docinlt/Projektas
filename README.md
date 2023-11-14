@@ -30,3 +30,15 @@
   Rimas       Kurtinaitis  y.yy
   ...
 ```
+
+# V0.1.1
+**Duomenu papildymas:**
+ - Papildyta programoje, kad vietoj vidurkio galutinio balo skaičiavimo būtų galima naudoti ir medianą.
+```
+Pavardė     Vardas       Galutinis (Vid.) / Galutinis (Med.)
+-----------------------------------------------------------
+Arvydas     Sabonis      x.xx               x.xx
+Rimas       Kurtinaitis  y.yy               y.yy
+...
+```
+ - Papildyta kad mokinio gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
