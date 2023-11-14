@@ -1,4 +1,4 @@
-# Projektas1
+# V0.1
 
 **Programą, kuri nuskaito šiuos studentų duomenis:**
  - vardą ir pavardę
