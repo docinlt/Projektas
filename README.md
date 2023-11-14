@@ -1,4 +1,4 @@
-# V0.1
+# V0.1.0
 
 **Programą, kuri nuskaito šiuos studentų duomenis:**
  - vardą ir pavardę
