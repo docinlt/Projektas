@@ -1,15 +1,20 @@
 ﻿#include "mylib.h"
 
 studentas::studentas() {
+	srand(time(0));
+
 	cout << "Iveskite studento varda: "; cin >> vard;
 	cout << "Iveskite studento pavarde: "; cin >> pav;
 	cout << "Kiek pazymiu buvo semestre? ";
 	int n; cin >> n;
+
+	paz.resize(n);
 	for (int i = 0; i < n; i++) {
-		int k;
-		cout << "Ivesk " << i + 1 << " semestro pazymi: "; cin >> k; paz.push_back(k);
+		int k = rand() %10 +1;
+		paz[i] = k;
 	}
-	cout << "Iveskite egzamino pazymi: "; cin >> egz;
+	egz = rand() % 10 + 1;
+	
 	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); 
 }
 

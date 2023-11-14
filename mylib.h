@@ -1,11 +1,12 @@
-﻿#pragma once
-#include <iostream>
+﻿#include <iostream>
 #include <numeric>
 #include <string>
 #include <array>
 #include <vector>
 #include <iomanip>
 #include <algorithm>
+#include <cstdlib>
+#include <ctime> 
 
 using std::string;
 using std::cout;
@@ -28,7 +29,7 @@ class studentas {
 	string vard, pav; 
 	vector<int> paz;  
 	int egz;		  
-	float rez;		 
+	float rez;
 public:
 	studentas();                                        
 	studentas(string v, string p, vector<int>pp, int e);
@@ -49,5 +50,5 @@ public:
 	double mediana(vector<int> vec);   
 
 	void operator>>(std::istream& input);  
-	void operator<<(std::ostream& out); 
+	void operator<<(std::ostream& output); 
 };

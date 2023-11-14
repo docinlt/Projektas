@@ -1,14 +1,17 @@
-#include "mylib.h"
+﻿#include "mylib.h"
 char skaiciavimo_Strategija = 'v';
 int main() {
-	//cout << "Kaip skaiciuoti galutini bala? (v - vidurkis, m - mediana): ";
-	//cin >> skaiciavimo_Strategija;
+	cout << "Kaip skaiciuoti galutini bala? (v - vidurkis, m - mediana): ";
+	cin >> skaiciavimo_Strategija;
 
 	vector<studentas> grupe;
-	for (int i = 0; i < 1; i++) {
+	int studentCount;
+	cout << "Kiek studentu bus ivesta? ";
+	cin >> studentCount; 
+
+	for (int i = 0; i < studentCount; i++) {
 		studentas K;
 		grupe.push_back(K);
-		K.~studentas();
 	}
 	cout << endl;
 
