@@ -42,3 +42,24 @@ Rimas       Kurtinaitis  y.yy               y.yy
 ...
 ```
  - Papildyta kad mokinio gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
+
+# V0.1.1
+ - Galimybė nuskaityti duomenis iš failo *kursiokai.txt*. 
+ ```
+Pavardė     Vardas      ND1  ND2   ND3  ND4  ND5  Egzaminas
+Vardas1     Pavardė1    8    9     10   6    10   9
+Vardas2     Pavardė2    7    10    8    5    4    6
+...
+```
+- Po nuskaičiavimo duomenu iš failo, išvedimas rezultatas:
+```
+Pavardė     Vardas       Galutinis (Vid.) Galutinis (Med.)
+----------------------------------------------------------
+Vardas1     Pavardė1                 x.xx             x.xx
+Vardas2     Pavardė2                 y.yy             y.yy
+...
+```
+ - Studentu išvedimas surūšiuoti pagal vardus ir visi stulpeliai išlygiuoti. 
+ - Atliktas kodo reorganizavimas.
+ - Funkcijos ir nauji duomenų tipai (klasės) perkelti į .h failą.
+ - Pritaikytas išimčių valdymas. 
