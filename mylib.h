@@ -7,6 +7,8 @@
 #include <algorithm>
 #include <cstdlib>
 #include <ctime> 
+#include <fstream>
+#include <sstream>
 
 using std::string;
 using std::cout;
@@ -21,6 +23,13 @@ using std::fixed;
 using std::setprecision;
 using std::sort;
 using std::domain_error;
+using std::stringstream;
+using std::ifstream;
+using std::ofstream;
+using std::getline;
+using std::istream;
+using std::ostream;
+using std::istringstream;
 
 extern char skaiciavimo_Strategija;
 extern string failoVardas;
@@ -38,7 +47,7 @@ public:
 	~studentas();										
 
 	inline string getVardas() { return vard; }		
-	inline int getPazNr() { return paz.size(); }	   
+	inline size_t getPazNr() { return paz.size(); }
 
 	inline void setVardas(string t) { vard = t; }      
 

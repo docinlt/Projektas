@@ -1,5 +1,5 @@
 ﻿#include "mylib.h"
-
+char skaiciavimo_Strategija = 'v';
 studentas::studentas() {
 	srand(time(0));
 
@@ -77,16 +77,18 @@ double studentas::mediana(vector<int> vec) {
 
 
 void studentas::operator>>(std::istream& input) { 
-	cout << "Iveskite studento varda: "; input >> vard;
-	cout << "Iveskite studento pavarde: "; input >> pav;
-	cout << "Kiek pazymiu buvo semestre? ";
+	input >> vard >> pav;
+	paz.clear();
+
 	int n; input >> n;
 	for (int i = 0; i < n; i++) {
 		int k;
-		cout << "Ivesk " << i + 1 << " semestro pazymi: "; input >> k; paz.push_back(k);
+		input >> k;
+		paz.push_back(k);
 	}
-	cout << "Iveskite egzamino pazymi: "; input >> egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); 
+	input >> egz;
+
+	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
 }
 
 
