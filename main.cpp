@@ -1,9 +1,11 @@
 ﻿#include "mylib.h"
 char skaiciavimo_Strategija = 'v';
+char pasirinkimas;
 int main() {
 	cout << "Kaip skaiciuoti galutini bala? (v - vidurkis, m - mediana): ";
 	cin >> skaiciavimo_Strategija;
-
+	cout << "Kaip norite pateikti pazymius, ivedant(i) ar generuojant(r): ";
+	cin >> pasirinkimas;
 	vector<studentas> grupe;
 	int studentCount;
 	cout << "Kiek studentu bus ivesta? ";

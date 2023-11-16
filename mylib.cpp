@@ -2,20 +2,33 @@
 
 studentas::studentas() {
 	srand(time(0));
-
-	cout << "Iveskite studento varda: "; cin >> vard;
-	cout << "Iveskite studento pavarde: "; cin >> pav;
-	cout << "Kiek pazymiu buvo semestre? ";
-	int n; cin >> n;
-
-	paz.resize(n);
-	for (int i = 0; i < n; i++) {
-		int k = rand() %10 +1;
-		paz[i] = k;
-	}
-	egz = rand() % 10 + 1;
 	
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); 
+	if (pasirinkimas == 'I' || pasirinkimas == 'i') {
+		cout << "Iveskite studento varda: "; cin >> vard;
+		cout << "Iveskite studento pavarde: "; cin >> pav;
+		cout << "Kiek pazymiu buvo semestre? ";
+		int n; cin >> n;
+		for (int i = 0; i < n; i++) {
+			int k;
+			cout << "Iveskite " << i + 1 << " semestro pazymi: ";
+			cin >> k; paz.push_back(k);
+		}
+		cout << "Iveskite egzamino pazymi: "; cin >> egz;
+	}
+	else if (pasirinkimas == 'R' || pasirinkimas == 'r'){
+		cout << "Iveskite studento varda: "; cin >> vard;
+		cout << "Iveskite studento pavarde: "; cin >> pav;
+		cout << "Kiek pazymiu buvo semestre? ";
+		int n; cin >> n;
+		for (int i = 0; i < n; i++) {
+			int k = rand() % 10 + 1;
+			paz.push_back(k);
+		}
+		egz = rand() % 10 + 1;
+	}
+	
+	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	
 }
 
 studentas::studentas(string v, string p, vector<int> pp, int e) 

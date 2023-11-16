@@ -23,6 +23,7 @@ using std::sort;
 using std::domain_error;
 
 extern char skaiciavimo_Strategija;
+extern char pasirinkimas;
 extern string failoVardas;
 
 class studentas {
