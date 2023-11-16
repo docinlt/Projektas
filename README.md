@@ -43,7 +43,7 @@ Rimas       Kurtinaitis  y.yy               y.yy
 ```
  - Papildyta kad mokinio gautieji balai už namų darbus bei egzaminą būtų generuojami atsitiktinai.
 
-# V0.1.1
+# V0.1.2
  - Galimybė nuskaityti duomenis iš failo *kursiokai.txt*. 
  ```
 Pavardė     Vardas      ND1  ND2   ND3  ND4  ND5  Egzaminas
