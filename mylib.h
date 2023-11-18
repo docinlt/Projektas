@@ -32,6 +32,7 @@ using std::ostream;
 using std::istringstream;
 
 extern char skaiciavimo_Strategija;
+extern char pasirinkimas;
 extern string failoVardas;
 
 class studentas {
@@ -47,7 +48,7 @@ public:
 	~studentas();										
 
 	inline string getVardas() { return vard; }		
-	inline size_t getPazNr() { return paz.size(); }
+	inline int getPazNr() { return paz.size(); }	   
 
 	inline void setVardas(string t) { vard = t; }      
 
