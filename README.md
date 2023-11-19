@@ -23,10 +23,10 @@
   - Galutinio pažymio skaičiavimo metodas
   - Galutinis apskaičiuotas balas pateikiamas dviejų skaičių po kablelio tikslumu:
 
-  `
+`
   Pavardė     Vardas       Galutinis (Vid.)
   --------------------------------------------------
   Arvydas     Sabonis      x.xx
   Rimas       Kurtinaitis  y.yy
   ...
-  `
+`
