@@ -63,3 +63,28 @@ Vardas2     Pavardė2                 y.yy             y.yy
  - Atliktas kodo reorganizavimas.
  - Funkcijos ir nauji duomenų tipai (klasės) perkelti į .h failą.
  - Pritaikytas išimčių valdymas. 
+
+# V0.2
+Nauju studentų generavimas: 1 000, 10 000, 100 000, 1 000 000, 10 000 000.
+
+Atliktas studentu rūšiavimas į dvi kategorijas:
+
+-  Studentai, kurių galutinis balas < 5.0 vadinami “vargšiukai”.
+-  Studentai, kurių galutinis balas >= 5.0 vadinami "kietiakiai".
+
+Surūšiuoti studentai išvesti į du naujus failus: `vargsiukai.txt` `kietiakiai.txt`
+
+Atliktas programos veikimo spartos analizę:
+
+- Failų kūrimas.
+- Duomenų nuskaitymą iš failų.
+- Studentų rūšiavimas ir išvedimas į du naujus failus.
+
+Programos testavimas naudojant sugeneruotus penkis skirtingo įrašų dydžio duomenų failus:
+```
+1 000 studentu generavimas ir issaugojimas uztruko: 0.0100941 sekundes.
+10 000 studentu generavimas ir issaugojimas uztruko: 0.0940954 sekundes.
+100 000 studentu generavimas ir issaugojimas uztruko: 0.934243 sekundes.
+1 000 000 studentu generavimas ir issaugojimas uztruko: 9.69477 sekundes.
+10 000 000 studentu generavimas ir issaugojimas uztruko: 94.2855 sekundes.
+```
