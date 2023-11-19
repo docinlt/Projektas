@@ -3,51 +3,50 @@
 studentas::studentas() {
 	srand(time(0));
 	
-	if (pasirinkimas == 'I' || pasirinkimas == 'i') {
-		cout << "Iveskite studento varda: "; cin >> vard;
-		cout << "Iveskite studento pavarde: "; cin >> pav;
-		cout << "Kiek pazymiu buvo semestre? ";
+	if (pasirinkimas == '1' ) {
+		cout << "Iveskite studento varda: " << endl; cin >> vard;
+		cout << "Iveskite studento pavarde: " << endl; cin >> pav;
+		cout << "Kiek pazymiu buvo semestre? " << endl;
 		int n; cin >> n;
 		for (int i = 0; i < n; i++) {
 			int k;
-			cout << "Iveskite " << i + 1 << " semestro pazymi: ";
+			cout << "Iveskite " << i + 1 << " semestro pazymi: " << endl;
 			cin >> k; paz.push_back(k);
 		}
-		cout << "Iveskite egzamino pazymi: "; cin >> egz;
+		cout << "Iveskite egzamino pazymi: " << endl; cin >> egz;
 	}
-	else if (pasirinkimas == 'R' || pasirinkimas == 'r'){
-		cout << "Iveskite studento varda: "; cin >> vard;
-		cout << "Iveskite studento pavarde: "; cin >> pav;
-		cout << "Kiek pazymiu buvo semestre? ";
+	else if (pasirinkimas == '2' ){
+		cout << "Iveskite studento varda: " << endl; cin >> vard;
+		cout << "Iveskite studento pavarde: " << endl; cin >> pav;
+		cout << "Kiek pazymiu buvo semestre? " << endl;
 		int n; cin >> n;
 		for (int i = 0; i < n; i++) {
 			int k = rand() % 10 + 1;
 			paz.push_back(k);
 		}
-		egz = rand() % 10 + 1;
+		egz = rand() % 10 + 1;;
 	}
-	
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	skaiciavimo_Strategija == '2' ? rezMed() : rezVid();
 	
 }
 
 studentas::studentas(string v, string p, vector<int> pp, int e) 
 {
 	vard = v; pav = p; paz = pp; egz = e;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	skaiciavimo_Strategija == '2' ? rezMed() : rezVid();
 }
 studentas::studentas(const studentas& temp) 
 {
 	vard = temp.vard; pav = temp.pav;
 	paz = temp.paz; egz = temp.egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	skaiciavimo_Strategija == '2' ? rezMed() : rezVid();
 }
 studentas& studentas:: operator=(const studentas& temp) 
 {
 	if (this == &temp) return *this;
 	vard = temp.vard; pav = temp.pav;
 	paz = temp.paz; egz = temp.egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	skaiciavimo_Strategija == '2' ? rezMed() : rezVid();
 	return *this;
 }
 studentas::~studentas() 
@@ -89,17 +88,19 @@ double studentas::mediana(vector<int> vec) {
 }
 
 
-void studentas::operator>>(std::istream& input) { 
-	cout << "Iveskite studento varda: "; input >> vard;
-	cout << "Iveskite studento pavarde: "; input >> pav;
-	cout << "Kiek pazymiu buvo semestre? ";
+void studentas::operator>>(std::istream& input) {
+	input >> vard >> pav;
+	paz.clear();
+
 	int n; input >> n;
 	for (int i = 0; i < n; i++) {
 		int k;
-		cout << "Ivesk " << i + 1 << " semestro pazymi: "; input >> k; paz.push_back(k);
+		input >> k;
+		paz.push_back(k);
 	}
-	cout << "Iveskite egzamino pazymi: "; input >> egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); 
+	input >> egz;
+
+	skaiciavimo_Strategija == '2' ? rezMed() : rezVid();
 }
 
 
@@ -113,3 +114,24 @@ void studentas::operator<<(std::ostream& output) {
 	output << "Galutinis balas: " << fixed << setprecision(2) << rez << endl;
 }
 
+string studentas::getPavarde() const { 
+	return pav;
+}
+
+int studentas::getND(int indeksas) const { 
+	if (indeksas >= 0 && indeksas < paz.size()) {
+		return paz[indeksas];
+	}
+	else {
+		return -1;
+	}
+}
+
+int studentas::getEgzaminas() const {
+	return egz;
+}
+
+int studentas::getRezultatas() const
+{
+	return rez;
+}

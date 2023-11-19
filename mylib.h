@@ -9,8 +9,11 @@
 #include <ctime> 
 #include <fstream>
 #include <sstream>
+#include <chrono>
+#include <cstdlib>
 
 using std::string;
+using std::to_string;
 using std::cout;
 using std::cin;
 using std::endl;
@@ -33,6 +36,7 @@ using std::istringstream;
 
 extern char skaiciavimo_Strategija;
 extern char pasirinkimas;
+extern char failop;
 extern string failoVardas;
 
 class studentas {
@@ -45,10 +49,15 @@ public:
 	studentas(string v, string p, vector<int>pp, int e);
 	studentas(const studentas& temp);					
 	studentas& operator=(const studentas& temp);		
-	~studentas();										
+	~studentas();	
 
-	inline string getVardas() { return vard; }		
-	inline int getPazNr() { return paz.size(); }	   
+	inline string getVardas() { return vard; }			 
+	inline size_t getPazNr() { return paz.size(); }	     
+	inline float getGal() { return rez; }			     
+	string getPavarde() const; 						     
+	int getND(int indeksas) const; 	                     
+	int getEgzaminas() const;                            
+	int getRezultatas() const;
 
 	inline void setVardas(string t) { vard = t; }      
 
