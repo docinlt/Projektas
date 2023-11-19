@@ -67,14 +67,14 @@ Vardas2     Pavardė2                 y.yy             y.yy
 # V0.2
 Nauju studentų generavimas: 1 000, 10 000, 100 000, 1 000 000, 10 000 000.
 
-Atliktas studentu rūšiavimas į dvi kategorijas:
+Atlikta studentu rūšiavimas į dvi kategorijas:
 
 -  Studentai, kurių galutinis balas < 5.0 vadinami “vargšiukai”.
 -  Studentai, kurių galutinis balas >= 5.0 vadinami "kietiakiai".
 
 Surūšiuoti studentai išvesti į du naujus failus: `vargsiukai.txt` `kietiakiai.txt`
 
-Atliktas programos veikimo spartos analizę:
+Atlikta programos veikimo spartos analizę:
 
 - Failų kūrimas.
 - Duomenų nuskaitymą iš failų.
