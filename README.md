@@ -29,4 +29,4 @@
   Arvydas     Sabonis      x.xx
   Rimas       Kurtinaitis  y.yy
   ...
-`
+  `
