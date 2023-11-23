@@ -11,6 +11,8 @@
 #include <sstream>
 #include <chrono>
 #include <cstdlib>
+#include <deque>
+#include <list>
 
 using std::string;
 using std::to_string;
@@ -19,6 +21,8 @@ using std::cin;
 using std::endl;
 using std::array;
 using std::vector;
+using std::deque;
+using std::list;
 using std::setw;
 using std::left;
 using std::right;
@@ -37,6 +41,7 @@ using std::istringstream;
 extern char skaiciavimo_Strategija;
 extern char pasirinkimas;
 extern char failop;
+extern char container;
 extern string failoVardas;
 
 class studentas {

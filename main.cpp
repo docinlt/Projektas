@@ -2,6 +2,7 @@
 char skaiciavimo_Strategija;
 char pasirinkimas;
 char failop;
+char container;
 int main() {
 	std::chrono::time_point<std::chrono::system_clock> start, end;
 	std::chrono::duration<double> elapsed_seconds;
@@ -55,28 +56,49 @@ int main() {
 
 	else if (pas == '3') {
 		system("cls");
+		vector<int> grupe;
+		cout << " Pasirinkite konteineri:" << endl;
+		cout << " 1 = Vector. " << endl;
+		cout << " 2 = Deque. " << endl;
+		cout << " 3 = List. " << endl;
+		cin >> container;
+		if (container == '1') {
+			vector<int> grupe;(grupe.begin(), grupe.end());
+		}
+		else if (container == '2') {
+			deque<int> grupe_deque(grupe.begin(), grupe.end());
+		}
+		else if (container == '3') {
+			list<int> grupe_list(grupe.begin(), grupe.end());
+		}
+		else {
+			throw std::runtime_error("Neteisingas pasirinkimas.");
+			return 1;
+		}
+		system("cls");
+
 		cout << " Generuojami duomenys..." << endl;
 		cout << endl;
 
 		string filename1 = "studentai1000.txt";
 		ofstream pirmas(filename1);
 		start = std::chrono::system_clock::now();
-		pirmas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ\n";
+		pirmas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ";
 		for (int i = 1; i <= 1000; i++) {
-			pirmas << " Vardas" << i << "\t";
+			pirmas << "\n Vardas" << i << "\t";
 			pirmas << " Pavarde" << i << "\t\t";
+			vector<int> grupe;
+
+			for (int j = 0; j < 5; j++) {
+				int random = rand() % 10 + 1;
+				grupe.push_back(random);
+			}
+
 			int random = rand() % 10 + 1;
-			pirmas << random << "\t";
-			random = rand() % 10 + 1;
-			pirmas << random << "\t";
-			random = rand() % 10 + 1;
-			pirmas << random << "\t";
-			random = rand() % 10 + 1;
-			pirmas << random << "\t";
-			random = rand() % 10 + 1;
-			pirmas << random << "\t";
-			random = rand() % 10 + 1;
-			pirmas << random << "\n";
+			pirmas << random;
+			for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+				pirmas << "\t" << *it;
+			}
 		}
 		pirmas.close();
 
@@ -88,22 +110,22 @@ int main() {
 		string filename2 = "studentai10000.txt";
 		ofstream antras(filename2);
 		start = std::chrono::system_clock::now();
-		antras << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ\n";
+		antras << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ";
 		for (int i = 1; i <= 10000; i++) {
-			antras << " Vardas" << i << "\t";
+			antras << "\n Vardas" << i << "\t";
 			antras << " Pavarde" << i << "\t\t";
+			vector<int> grupe;
+
+			for (int j = 0; j < 5; j++) {
+				int random = rand() % 10 + 1;
+				grupe.push_back(random);
+			}
+
 			int random = rand() % 10 + 1;
-			antras << random << "\t";
-			random = rand() % 10 + 1;
-			antras << random << "\t";
-			random = rand() % 10 + 1;
-			antras << random << "\t";
-			random = rand() % 10 + 1;
-			antras << random << "\t";
-			random = rand() % 10 + 1;
-			antras << random << "\t";
-			random = rand() % 10 + 1;
-			antras << random << "\n";
+			antras << random;
+			for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+				antras << "\t" << *it;
+			}
 		}
 		antras.close();
 		cout << "Sugeneruoti duomenys ir issaugoti i faila: " << filename2 << "." << endl;
@@ -114,22 +136,22 @@ int main() {
 		string filename3 = "studentai100000.txt";
 		ofstream trecias(filename3);
 		start = std::chrono::system_clock::now();
-		trecias << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ\n";
+		trecias << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ";
 		for (int i = 1; i <= 100000; i++) {
-			trecias << " Vardas" << i << "\t";
+			trecias << "\n Vardas" << i << "\t";
 			trecias << " Pavarde" << i << "\t\t";
+			vector<int> grupe;
+
+			for (int j = 0; j < 5; j++) {
+				int random = rand() % 10 + 1;
+				grupe.push_back(random);
+			}
+
 			int random = rand() % 10 + 1;
-			trecias << random << "\t";
-			random = rand() % 10 + 1;
-			trecias << random << "\t";
-			random = rand() % 10 + 1;
-			trecias << random << "\t";
-			random = rand() % 10 + 1;
-			trecias << random << "\t";
-			random = rand() % 10 + 1;
-			trecias << random << "\t";
-			random = rand() % 10 + 1;
-			trecias << random << "\n";
+			trecias << random;
+			for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+				trecias << "\t" << *it;
+			}
 		}
 		trecias.close();
 		cout << "Sugeneruoti duomenys ir issaugoti i faila: " << filename3 << "." << endl;
@@ -140,22 +162,22 @@ int main() {
 		string filename4 = "studentai1000000.txt";
 		ofstream ketvirtas(filename4);
 		start = std::chrono::system_clock::now();
-		ketvirtas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ\n";
+		ketvirtas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ";
 		for (int i = 1; i <= 1000000; i++) {
-			ketvirtas << " Vardas" << i << "\t";
+			ketvirtas << "\n Vardas" << i << "\t";
 			ketvirtas << " Pavarde" << i << "\t\t";
+			vector<int> grupe;
+
+			for (int j = 0; j < 5; j++) {
+				int random = rand() % 10 + 1;
+				grupe.push_back(random);
+			}
+
 			int random = rand() % 10 + 1;
-			ketvirtas << random << "\t";
-			random = rand() % 10 + 1;
-			ketvirtas << random << "\t";
-			random = rand() % 10 + 1;
-			ketvirtas << random << "\t";
-			random = rand() % 10 + 1;
-			ketvirtas << random << "\t";
-			random = rand() % 10 + 1;
-			ketvirtas << random << "\t";
-			random = rand() % 10 + 1;
-			ketvirtas << random << "\n";
+			ketvirtas << random;
+			for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+				ketvirtas << "\t" << *it;
+			}
 		}
 		ketvirtas.close();
 		cout << "Sugeneruoti duomenys ir issaugoti i faila: " << filename4 << "." << endl;
@@ -166,54 +188,74 @@ int main() {
 		string filename5 = "studentai10000000.txt";
 		ofstream penktas(filename5);
 		start = std::chrono::system_clock::now();
-		penktas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ\n";
+		penktas << " Vardas	" << "\t" << " Pavarde" << "\t\t" << "ND1" << "\t" << "ND2" << "\t" << "ND3" << "\t" << "ND4" << "\t" << "ND5" << "\t" << "EGZ";
 		for (int i = 1; i <= 9999999; i++) {
-			penktas << " Vardas" << i << "\t";
+			penktas << "\n Vardas" << i << "\t";
 			penktas << " Pavarde" << i << "\t\t";
+			vector<int> grupe;
+
+			for (int j = 0; j < 5; j++) {
+				int random = rand() % 10 + 1;
+				grupe.push_back(random);
+			}
+
 			int random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\n";
+			penktas << random;
+			for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+				penktas << "\t" << *it;
+			}
 		}
-		for (int i = 10000000; i <= 10000000; i++) {
-			penktas << " Vardas" << i << "\t";
-			penktas << " Pavarde" << i << "\t";
-			int random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\t";
-			random = rand() % 10 + 1;
-			penktas << random << "\n";
+			for (int i = 10000000; i <= 10000000; i++) {
+				penktas << "\n Vardas" << i << "\t";
+				penktas << " Pavarde" << i << "\t";
+				vector<int> grupe;
+
+				for (int j = 0; j < 5; j++) {
+					int random = rand() % 10 + 1;
+					grupe.push_back(random);
+				}
+
+				int random = rand() % 10 + 1;
+				penktas << random;
+				for (auto it = grupe.begin(); it != grupe.end(); ++it) {
+					penktas << "\t" << *it;
+				}
+			}
+			penktas.close();
+			cout << "Sugeneruoti duomenys ir issaugoti i faila: " << filename5 << "." << endl;
+			end = std::chrono::system_clock::now();
+			elapsed_seconds = end - start;
+			cout << "10 000 000 studentu generavimas ir issaugojimas uztruko: " << elapsed_seconds.count() << " sekundes." << endl;
+			system("pause");
+			system("cls");
+			main();
+
 		}
-		penktas.close();
-		cout << "Sugeneruoti duomenys ir issaugoti i faila: " << filename5 << "." << endl;
-		end = std::chrono::system_clock::now();
-		elapsed_seconds = end - start;
-		cout << "10 000 000 studentu generavimas ir issaugojimas uztruko: " << elapsed_seconds.count() << " sekundes." << endl;
-		system("pause");
-		system("cls");
-		main();
 
-	}
-
-
+	
 	else if (pas == '2') {
 		system("cls");
 		vector<studentas> grupe;
+		cout << " Pasirinkite konteineri:" << endl;
+		cout << " 1 = Vector. " << endl;
+		cout << " 2 = Deque. " << endl;
+		cout << " 3 = List. " << endl;
+		cin >> container;
+		if (container == '1') {
+			vector<studentas> grupe;(grupe.begin(), grupe.end());
+		}
+		else if (container == '2') {
+			deque<studentas> grupe_deque(grupe.begin(), grupe.end());
+		}
+		else if (container == '3') {
+			list<studentas> grupe_list(grupe.begin(), grupe.end());
+		}
+		else {
+			throw std::runtime_error("Neteisingas pasirinkimas.");
+			return 1;
+		}
+		
+		system("cls");
 		cout << "Kaip skaiciuoti galutini bala? " << endl;
 		cout << " 1 = vidurkis. " << endl;
 		cout << " 2 = mediana. " << endl;
@@ -326,6 +368,6 @@ int main() {
 		main();
 	}
 	if (pas == '0') {
-		return 0;
+		exit(0);
 	}
 }
