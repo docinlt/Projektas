@@ -80,7 +80,7 @@ Atlikta programos veikimo spartos analizę:
 - Duomenų nuskaitymą iš failų.
 - Studentų rūšiavimas ir išvedimas į du naujus failus.
 
-Programos testavimas naudojant sugeneruotus penkis skirtingo įrašų dydžio duomenų failus:
+Programos testavimas:
 ```
 1 000 studentu generavimas ir issaugojimas uztruko: 0.0100941 sekundes.
 10 000 studentu generavimas ir issaugojimas uztruko: 0.0940954 sekundes.
@@ -88,3 +88,18 @@ Programos testavimas naudojant sugeneruotus penkis skirtingo įrašų dydžio d
 1 000 000 studentu generavimas ir issaugojimas uztruko: 9.69477 sekundes.
 10 000 000 studentu generavimas ir issaugojimas uztruko: 94.2855 sekundes.
 ```
+```
+1 000 studentu nuskaitymas uztruko: 0.0196079 sekundes.
+10 000  studentu nuskaitymas uztruko: 0.202027 sekundes.
+100 000  studentu nuskaitymas uztruko: 2.08346 sekundes.
+1 000 000  studentu nuskaitymas uztruko: 20.117 sekundes.
+10 000 000  studentu nuskaitymas uztruko: 209.615 sekundes.
+```
+```
+1 000 studentu rusiavimas uztruko: 0.0028348 sekundes.
+10 000  studentu rusiavimas uztruko: 0.0225809 sekundes.
+100 000  studentu rusiavimas uztruko: 0.228028 sekundes.
+1 000 000  studentu rusiavimas uztruko: 2.32511 sekundes.
+10 000 000  studentu rusiavimas uztruko: 23.3341 sekundes.
+```
+
