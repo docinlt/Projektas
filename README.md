@@ -102,4 +102,92 @@ Programos testavimas:
 1 000 000  studentu rusiavimas uztruko: 2.32511 sekundes.
 10 000 000  studentu rusiavimas uztruko: 23.3341 sekundes.
 ```
+# V0.2.1
+
+ - Pridetas kontaineriu pasirinkimas: `Vector` `Deque` `List`
+ 
+ **Skirtingų konteinerių testavimo rezultatai:**
+
+**Vector**
+
+**Failų kūrimas:**
+```
+1 000 studentu generavimas ir issaugojimas uztruko: 0.0117462 sekundes.
+10 000 studentu generavimas ir issaugojimas uztruko: 0.114177 sekundes.
+100 000 studentu generavimas ir issaugojimas uztruko: 1.14467 sekundes.
+1 000 000 studentu generavimas ir issaugojimas uztruko: 12.9032 sekundes.
+10 000 000 studentu generavimas ir issaugojimas uztruko: 115.425 sekundes.
+```
+**Duomenų nuskaitymas iš failų:**
+```
+1 000 studentu nuskaitymas uztruko: 0.0196079 sekundes.
+10 000  studentu nuskaitymas uztruko: 0.202027 sekundes.
+100 000  studentu nuskaitymas uztruko: 2.08346 sekundes.
+1 000 000  studentu nuskaitymas uztruko: 20.117 sekundes.
+10 000 000  studentu nuskaitymas uztruko: 209.615 sekundes.
+```
+**Studentų rūšiavimas į dvi grupes ir išsaugojimas:**
+```
+1 000 studentu rusiavimas uztruko: 0.0028348 sekundes.
+10 000  studentu rusiavimas uztruko: 0.0225809 sekundes.
+100 000  studentu rusiavimas uztruko: 0.228028 sekundes.
+1 000 000  studentu rusiavimas uztruko: 2.32511 sekundes.
+10 000 000  studentu rusiavimas uztruko: 23.3341 sekundes.
+```
+
+**Deque**
+
+**Failų kūrimas:**
+```
+1 000 studentu generavimas ir issaugojimas uztruko: 0.0116282 sekundes.
+10 000 studentu generavimas ir issaugojimas uztruko: 0.113923 sekundes.
+100 000 studentu generavimas ir issaugojimas uztruko: 1.14888 sekundes.
+1 000 000 studentu generavimas ir issaugojimas uztruko: 11.4728 sekundes.
+10 000 000 studentu generavimas ir issaugojimas uztruko: 114.67 sekundes.
+```
+**Duomenų nuskaitymas iš failų:**
+```
+1 000 studentu nuskaitymas uztruko: 0.0193503 sekundes.
+10 000  studentu nuskaitymas uztruko: 0.202718 sekundes.
+100 000  studentu nuskaitymas uztruko: 2.05375 sekundes.
+1 000 000  studentu nuskaitymas uztruko: 19.8391 sekundes.
+10 000 000  studentu nuskaitymas uztruko: 206.56 sekundes.
+```
+**Studentų rūšiavimas į dvi grupes ir išsaugojimas:**
+```
+1 000 studentu rusiavimas uztruko: 0.002526 sekundes.
+10 000  studentu rusiavimas uztruko: 0.0231674 sekundes.
+100 000  studentu rusiavimas uztruko: 0.229066 sekundes.
+1 000 000  studentu rusiavimas uztruko: 2.30468 sekundes.
+10 000 000  studentu rusiavimas uztruko: 23.0783 sekundes.
+```
+
+**List**
+
+**Failų kūrimas:**
+```
+1 000 studentu generavimas ir issaugojimas uztruko: 0.0116499 sekundes.
+10 000 studentu generavimas ir issaugojimas uztruko: 0.114254 sekundes.
+100 000 studentu generavimas ir issaugojimas uztruko: 1.13993 sekundes.
+1 000 000 studentu generavimas ir issaugojimas uztruko: 11.3965 sekundes.
+10 000 000 studentu generavimas ir issaugojimas uztruko: 115.076 sekundes.
+```
+**Duomenų nuskaitymas iš failų:**
+```
+1 000 studentu nuskaitymas uztruko: 0.0198067 sekundes.
+10 000  studentu nuskaitymas uztruko: 0.201586 sekundes.
+100 000  studentu nuskaitymas uztruko: 2.05774 sekundes.
+1 000 000  studentu nuskaitymas uztruko: 19.8041 sekundes.
+10 000 000  studentu nuskaitymas uztruko: 206.793 sekundes.
+```
+**Studentų rūšiavimas į dvi grupes ir išsaugojimas:**
+```
+1 000 studentu rusiavimas uztruko: 0.0026183 sekundes.
+10 000  studentu rusiavimas uztruko: 0.0231942 sekundes.
+100 000  studentu rusiavimas uztruko: 0.22894 sekundes.
+1 000 000  studentu rusiavimas uztruko: 2.30861 sekundes.
+10 000 000  studentu rusiavimas uztruko: 22.9593 sekundes.
+```
+
+ 
 
