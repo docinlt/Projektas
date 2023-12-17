@@ -1,3 +1,18 @@
+# Projektas
+
+Projektas - tai programa, kuri leidžia vartotojui įvesti studentų vardus, pavardes, namų darbų rezultatus ir egzamino rezultatą, ir pagal tai skaičiuoja galutinį studento balą.
+
+# Įdiegimo instrukcija
+
+1. Prie "Releases" spauskite ant v1.0.
+2. Spauskite setup.exe kad atsisiųsti įdiegimo paketą.
+3. Sekite įdiegimo paketo instrukcijas.
+
+# Naudojimosi instrukcijos
+
+1. Paleidžiamas Projektas.exe.
+2. Sekite instrukcijas ekrane.
+
 # V0.1
 
 **Programą, kuri nuskaito šiuos studentų duomenis:**
