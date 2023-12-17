@@ -205,6 +205,6 @@ Programos testavimas:
 ```
 
  
-# V0.2.1
+# V1.0
 
 - Sukurtas setup failas.
