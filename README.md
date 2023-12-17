@@ -208,4 +208,4 @@ Programos testavimas:
 # V1.0
 
 - Sukurtas setup failas.
-- 
+  
