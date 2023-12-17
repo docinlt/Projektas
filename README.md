@@ -189,5 +189,9 @@ Programos testavimas:
 10 000 000  studentu rusiavimas uztruko: 22.9593 sekundes.
 ```
 
- 
+  
+# V1.0
+
+- Sukurtas setup failas.
+
 
