@@ -190,4 +190,6 @@ Programos testavimas:
 ```
 
  
+# V0.2.1
 
+- Sukurtas setup failas.
