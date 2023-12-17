@@ -209,4 +209,3 @@ Programos testavimas:
 
 
 - Sukurtas setup failas.
-- 
